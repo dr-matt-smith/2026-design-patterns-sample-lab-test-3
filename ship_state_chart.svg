@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" width="1000" height="640" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#222"/>
+    </marker>
+  </defs>
+
+  <rect width="1000" height="640" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="30" y="40" font-size="20" font-weight="bold" fill="#222">Ship — State Chart</text>
+  <text x="30" y="62" font-size="13" fill="#555">attribute: x : int</text>
+
+  <!-- Initial pseudo-state -->
+  <circle cx="500" cy="110" r="11" fill="#222"/>
+  <line x1="500" y1="121" x2="500" y2="258" stroke="#222" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="512" y="185" font-size="14" fill="#222">create(initialX) / x = initialX</text>
+
+  <!-- STATIONARY -->
+  <rect x="410" y="260" width="180" height="80" rx="16" fill="#e8f1fb" stroke="#2b5d8f" stroke-width="2"/>
+  <text x="500" y="306" font-size="16" font-weight="bold" text-anchor="middle" fill="#1b3d5f">STATIONARY</text>
+
+  <!-- MOVE_LEFT -->
+  <rect x="30" y="260" width="180" height="80" rx="16" fill="#eef8ec" stroke="#3c7d34" stroke-width="2"/>
+  <text x="120" y="290" font-size="16" font-weight="bold" text-anchor="middle" fill="#25521f">MOVE_LEFT</text>
+  <line x1="30" y1="302" x2="210" y2="302" stroke="#3c7d34" stroke-width="1"/>
+  <text x="120" y="325" font-size="14" text-anchor="middle" fill="#222">entry / x--</text>
+
+  <!-- MOVE_RIGHT -->
+  <rect x="790" y="260" width="180" height="80" rx="16" fill="#eef8ec" stroke="#3c7d34" stroke-width="2"/>
+  <text x="880" y="290" font-size="16" font-weight="bold" text-anchor="middle" fill="#25521f">MOVE_RIGHT</text>
+  <line x1="790" y1="302" x2="970" y2="302" stroke="#3c7d34" stroke-width="1"/>
+  <text x="880" y="325" font-size="14" text-anchor="middle" fill="#222">entry / x++</text>
+
+  <!-- FIRE_MISSILE -->
+  <rect x="410" y="480" width="180" height="80" rx="16" fill="#fdeeee" stroke="#a33a3a" stroke-width="2"/>
+  <text x="500" y="510" font-size="16" font-weight="bold" text-anchor="middle" fill="#6e2020">FIRE_MISSILE</text>
+  <line x1="410" y1="522" x2="590" y2="522" stroke="#a33a3a" stroke-width="1"/>
+  <text x="500" y="545" font-size="14" text-anchor="middle" fill="#222">entry / fireMissile()</text>
+
+  <!-- STATIONARY -> MOVE_LEFT -->
+  <line x1="410" y1="284" x2="212" y2="284" stroke="#222" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="310" y="275" font-size="14" text-anchor="middle" fill="#222">leftArrowKeyPressed()</text>
+  <!-- MOVE_LEFT -> STATIONARY (completion) -->
+  <line x1="210" y1="316" x2="408" y2="316" stroke="#222" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- STATIONARY -> MOVE_RIGHT -->
+  <line x1="590" y1="284" x2="788" y2="284" stroke="#222" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="690" y="275" font-size="14" text-anchor="middle" fill="#222">rightArrowKeyPressed()</text>
+  <!-- MOVE_RIGHT -> STATIONARY (completion) -->
+  <line x1="790" y1="316" x2="592" y2="316" stroke="#222" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- STATIONARY -> FIRE_MISSILE -->
+  <line x1="480" y1="340" x2="480" y2="478" stroke="#222" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="470" y="414" font-size="14" text-anchor="end" fill="#222">spaceKeyPressed()</text>
+  <!-- FIRE_MISSILE -> STATIONARY (completion) -->
+  <line x1="520" y1="480" x2="520" y2="342" stroke="#222" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Legend -->
+  <text x="30" y="615" font-size="13" fill="#555">Unlabelled arrows are completion transitions: they fire as soon as the entry action finishes.</text>
+</svg>
