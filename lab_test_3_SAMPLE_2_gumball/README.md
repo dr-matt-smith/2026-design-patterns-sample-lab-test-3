@@ -5,6 +5,24 @@
 Gumball machine state chart
 ![](README_images/gumball_statechart.svg)
 
+NOTES:
+1. Each State object should return its name in CAPS in a `toString()` method
+    - e.g.
+        ```typescript
+        public toString(): string {
+            return "SOLD";
+        }
+        ```
+
+1. your system should log to the console appropriate messages when each event is processed 
+    - An event that is valid should change state, and print a message saying it's changing to the new state.
+    - An event that is NOT valid in the current state must leave the state unchanged, and print a message saying why.
+
+    - e.g. 
+        - `You inserted a quarter`
+        - `You can't insert another quarter`
+        - `You can't eject, you haven't inserted a quarter yet`
+
 ## the state pattern variant to demonstrate
 
 ![](README_images/state_v3_interface_cached.svg)

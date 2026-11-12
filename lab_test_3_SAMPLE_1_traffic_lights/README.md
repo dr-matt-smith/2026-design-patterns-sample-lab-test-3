@@ -5,14 +5,30 @@
 Traffic light state chart
 ![](README_images/traffic_light_statechart.svg)
 
-Events:
 
-- `goGreen()` - "goGREEN" message received
-- `goAmber()` - "goAMBER" message received
-- `goRed()` - "goRED" message received
+NOTES:
+1. Each State object should return its name in CAPS in a `toString()` method
+    - e.g.
+        ```typescript
+        public toString(): string {
+            return "RED";
+        }
+        ```
 
-An event that isn't valid in the current state (e.g. `goAmber()` while RED) must leave the state unchanged,
-and print a message saying why.
+
+1. your system should log to the console appropriate messages when each event is processed 
+    - An event that is valid should change state, and print a message saying it's changing to the new state.
+    - An event that is NOT valid in the current state must leave the state unchanged, and print a message saying why.
+
+    - e.g. 
+        - `The light changes to AMBER`
+        - `The light is already GREEN`
+
+1. when a new `GumballMachine` object is created, it is passed the number of gumballs in the machine
+    - e.g. `new GumballMachine(5) // start with 5 gumballs`
+
+
+
 
 ## the state pattern variant to demonstrate
 
