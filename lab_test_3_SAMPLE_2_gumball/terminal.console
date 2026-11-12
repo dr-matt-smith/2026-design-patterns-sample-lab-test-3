@@ -1,0 +1,7 @@
+[session]
+type = "shell"
+
+[[session.shortcut]]
+label = "RUN: start the gumball machine menu (src/main.ts)"
+icon = "bs-play-fill"
+text = "deno run src/main.ts"
