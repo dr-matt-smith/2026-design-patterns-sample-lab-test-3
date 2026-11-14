@@ -1,8 +1,8 @@
 # Question 1
 
-## the state chart to implement
+## the state machine diagram to implement
 
-Traffic light state chart
+Traffic light state machine diagram
 ![](README_images/traffic_light_statechart.svg)
 
 
@@ -17,24 +17,20 @@ NOTES:
 
 
 1. your system should log to the console appropriate messages when each event is processed 
-    - An event that is valid should change state, and print a message saying it's changing to the new state.
-    - An event that is NOT valid in the current state must leave the state unchanged, and print a message saying why.
+    - An event that is valid should change state
+        - and print a message saying it's changing to the new state.
+    - An event that is NOT valid in the current state must leave the state unchanged
+        - and print a message saying why.
 
     - e.g. 
         - `The light changes to AMBER`
         - `The light is already GREEN`
 
-1. when a new `GumballMachine` object is created, it is passed the number of gumballs in the machine
-    - e.g. `new GumballMachine(5) // start with 5 gumballs`
 
 
 
 
 ## the state pattern variant to demonstrate
-
-Variant 2: `State` is an **«abstract»** superclass, and each state (`RedState`, `GreenState`, `AmberState`) is a
-**subclass** of it. The states do **not** store the context: the `TrafficLight` passes **itself** as a parameter
-with every event (e.g. `this.state.goGreen(this)`), and the state calls `setState(...)` on the light it was given.
 
 ![](README_images/state_v2_abstract_param.svg)
 
@@ -76,7 +72,8 @@ q - quit
 
 # Question 2
 
-create a copy of your question 1 project, and implement the following additional functionality:
+Create a copy of your question 1 project, naming the copy `question2`. 
+Then in your `question2` project implement the following additional functionality:
 
 - add a new state 'FlashingAmber', used when the lights are out of order
 - add a new event `goFlashing()`: from ANY of the RED, GREEN or AMBER states it moves the light to 'FlashingAmber'

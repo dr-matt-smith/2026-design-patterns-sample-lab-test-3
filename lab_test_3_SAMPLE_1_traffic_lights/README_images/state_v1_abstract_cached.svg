@@ -34,17 +34,22 @@
     <polyline points="220,52 450,52" fill="none" stroke="#222" stroke-width="1.3"/>
     <polyline points="440.8691105968769,47.9223954694043 450,52 440.8691105968769,56.0776045305957" fill="none" stroke="#222" stroke-width="1.3"/>
     <text x="442" y="46" font-size="11" text-anchor="end" font-weight="normal" font-style="italic" fill="#444">state</text>
-    <polyline points="390.0,205 486.25,139" fill="none" stroke="#222" stroke-width="1.3"/>
-    <polygon points="486.2,128.0 473.7,131.3 482.2,140.4" fill="#fff" stroke="#222" stroke-width="1.3"/>
-    <polyline points="605.0,205 583.0,139" fill="none" stroke="#222" stroke-width="1.3"/>
-    <polygon points="583.0,128.0 579.6,140.6 591.7,137.6" fill="#fff" stroke="#222" stroke-width="1.3"/>
+    <polygon points="565,128 556,142 574,142" fill="#fff" stroke="#222" stroke-width="1.3"/>
+    <polyline points="565,142 565,172" fill="none" stroke="#222" stroke-width="1.3"/>
+    <polyline points="390,172 605,172" fill="none" stroke="#222" stroke-width="1.3"/>
+    <polyline points="390,172 390,205" fill="none" stroke="#222" stroke-width="1.3"/>
+    <polyline points="605,172 605,205" fill="none" stroke="#222" stroke-width="1.3"/>
     <polyline points="450,92 220,92" fill="none" stroke="#222" stroke-width="1.3"/>
     <polyline points="229.1308894031231,96.07760453059569 220,92 229.1308894031231,87.9223954694043" fill="none" stroke="#222" stroke-width="1.3"/>
     <text x="228" y="86" font-size="11" text-anchor="start" font-weight="normal" font-style="italic" fill="#444">context</text>
-    <rect x="33" y="238" width="135" height="30" fill="#d6d6d6"/>
-    <path d="M30,235 H156 L165,244 V265 H30 Z" fill="#fff" stroke="#222" stroke-width="1.3"/>
-    <path d="M156,235 V244 H165" fill="none" stroke="#222" stroke-width="1"/>
-    <text x="40" y="254" font-size="12" text-anchor="start" font-weight="normal" font-style="normal" fill="#222">state.handle()</text>
-    <polyline points="70,124 70,235" fill="none" stroke="#222" stroke-width="1" stroke-dasharray="2,3"/>
+    <rect x="33" y="153" width="150" height="104" fill="#d6d6d6"/>
+    <path d="M30,150 H170 L180,160 V254 H30 Z" fill="#fff6b3" stroke="#222" stroke-width="1.3"/>
+    <path d="M170,150 V160 H180" fill="none" stroke="#222" stroke-width="1"/>
+    <text x="105.0" y="169" font-size="12" text-anchor="middle" fill="#222">NOTE:</text>
+    <text x="105.0" y="185" font-size="12" text-anchor="middle" fill="#222">Delegate event to</text>
+    <text x="105.0" y="201" font-size="12" text-anchor="middle" fill="#222">current state,</text>
+    <text x="105.0" y="217" font-size="12" text-anchor="middle" fill="#222">for example:</text>
+    <text x="42" y="242" font-size="12" text-anchor="start" fill="#222">this.state.handle()</text>
+    <polyline points="70,124 70,150" fill="none" stroke="#222" stroke-width="1" stroke-dasharray="2,3"/>
   </g>
 </svg>

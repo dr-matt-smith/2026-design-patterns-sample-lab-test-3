@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 730 382" width="730" height="382" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <title>Variant 1 — abstract superclass, Context cached in the constructor</title>
+  <rect width="730" height="382" fill="#fff"/>
+  <text x="20" y="30" font-size="20" font-weight="bold" fill="#222">Variant 1 — abstract superclass, Context cached in the constructor</text>
+  <line x1="20" y1="42" x2="710" y2="42" stroke="#c8d0d8" stroke-width="1"/>
+  <g transform="translate(0,52)">
+    <rect x="23" y="33" width="200" height="94" fill="#d6d6d6"/>
+    <rect x="20" y="30" width="200" height="94" fill="#fff" stroke="#222" stroke-width="1.3"/>
+    <text x="120.0" y="48" font-size="14" text-anchor="middle" font-weight="bold" font-style="normal" fill="#222">Context</text>
+    <polyline points="20,56 220,56" fill="none" stroke="#222" stroke-width="1.3"/>
+    <text x="28" y="73" font-size="12" text-anchor="start" font-weight="normal" font-style="normal" fill="#222">- state: State</text>
+    <polyline points="20,82 220,82" fill="none" stroke="#222" stroke-width="1.3"/>
+    <text x="28" y="99" font-size="12" text-anchor="start" font-weight="normal" font-style="normal" fill="#222">+ request()</text>
+    <text x="28" y="115" font-size="12" text-anchor="start" font-weight="normal" font-style="normal" fill="#222">+ setState(s: State)</text>
+    <rect x="453" y="23" width="230" height="108" fill="#d6d6d6"/>
+    <rect x="450" y="20" width="230" height="108" fill="#fff" stroke="#222" stroke-width="1.3"/>
+    <text x="565.0" y="36" font-size="11" text-anchor="middle" font-weight="normal" font-style="normal" fill="#222">«abstract»</text>
+    <text x="565.0" y="53" font-size="14" text-anchor="middle" font-weight="bold" font-style="italic" fill="#222">State</text>
+    <polyline points="450,60 680,60" fill="none" stroke="#222" stroke-width="1.3"/>
+    <text x="458" y="77" font-size="12" text-anchor="start" font-weight="normal" font-style="normal" fill="#222"># context: Context</text>
+    <polyline points="450,86 680,86" fill="none" stroke="#222" stroke-width="1.3"/>
+    <text x="458" y="103" font-size="12" text-anchor="start" font-weight="normal" font-style="normal" fill="#222">+ State(context: Context)</text>
+    <text x="458" y="119" font-size="12" text-anchor="start" font-weight="normal" font-style="italic" fill="#222">+ handle()</text>
+    <rect x="293" y="208" width="200" height="52" fill="#d6d6d6"/>
+    <rect x="290" y="205" width="200" height="52" fill="#fff" stroke="#222" stroke-width="1.3"/>
+    <text x="390.0" y="223" font-size="14" text-anchor="middle" font-weight="bold" font-style="normal" fill="#222">ConcreteStateA</text>
+    <polyline points="290,231 490,231" fill="none" stroke="#222" stroke-width="1.3"/>
+    <text x="298" y="248" font-size="12" text-anchor="start" font-weight="normal" font-style="normal" fill="#222">+ handle()</text>
+    <rect x="508" y="208" width="200" height="52" fill="#d6d6d6"/>
+    <rect x="505" y="205" width="200" height="52" fill="#fff" stroke="#222" stroke-width="1.3"/>
+    <text x="605.0" y="223" font-size="14" text-anchor="middle" font-weight="bold" font-style="normal" fill="#222">ConcreteStateB</text>
+    <polyline points="505,231 705,231" fill="none" stroke="#222" stroke-width="1.3"/>
+    <text x="513" y="248" font-size="12" text-anchor="start" font-weight="normal" font-style="normal" fill="#222">+ handle()</text>
+    <polyline points="220,52 450,52" fill="none" stroke="#222" stroke-width="1.3"/>
+    <polyline points="440.8691105968769,47.9223954694043 450,52 440.8691105968769,56.0776045305957" fill="none" stroke="#222" stroke-width="1.3"/>
+    <text x="442" y="46" font-size="11" text-anchor="end" font-weight="normal" font-style="italic" fill="#444">state</text>
+    <polygon points="565,128 556,142 574,142" fill="#fff" stroke="#222" stroke-width="1.3"/>
+    <polyline points="565,142 565,172" fill="none" stroke="#222" stroke-width="1.3"/>
+    <polyline points="390,172 605,172" fill="none" stroke="#222" stroke-width="1.3"/>
+    <polyline points="390,172 390,205" fill="none" stroke="#222" stroke-width="1.3"/>
+    <polyline points="605,172 605,205" fill="none" stroke="#222" stroke-width="1.3"/>
+    <polyline points="450,92 220,92" fill="none" stroke="#222" stroke-width="1.3"/>
+    <polyline points="229.1308894031231,96.07760453059569 220,92 229.1308894031231,87.9223954694043" fill="none" stroke="#222" stroke-width="1.3"/>
+    <text x="228" y="86" font-size="11" text-anchor="start" font-weight="normal" font-style="italic" fill="#444">context</text>
+    <rect x="33" y="153" width="150" height="104" fill="#d6d6d6"/>
+    <path d="M30,150 H170 L180,160 V254 H30 Z" fill="#fff6b3" stroke="#222" stroke-width="1.3"/>
+    <path d="M170,150 V160 H180" fill="none" stroke="#222" stroke-width="1"/>
+    <text x="105.0" y="169" font-size="12" text-anchor="middle" fill="#222">NOTE:</text>
+    <text x="105.0" y="185" font-size="12" text-anchor="middle" fill="#222">Delegate event to</text>
+    <text x="105.0" y="201" font-size="12" text-anchor="middle" fill="#222">current state,</text>
+    <text x="105.0" y="217" font-size="12" text-anchor="middle" fill="#222">for example:</text>
+    <text x="42" y="242" font-size="12" text-anchor="start" fill="#222">this.state.handle()</text>
+    <polyline points="70,124 70,150" fill="none" stroke="#222" stroke-width="1" stroke-dasharray="2,3"/>
+  </g>
+</svg>

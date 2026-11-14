@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 200" width="760" height="200" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <title>Traffic light state chart</title>
+  <rect width="760" height="200" fill="#fff"/>
+  <rect x="113.0" y="48.0" width="150" height="50" rx="14" fill="#d6d6d6"/>
+  <rect x="110.0" y="45.0" width="150" height="50" rx="14" fill="#fff" stroke="#222" stroke-width="1.3"/>
+  <text x="185" y="75" font-size="14" text-anchor="middle" font-weight="bold" font-style="normal" fill="#222">Red</text>
+  <rect x="333.0" y="48.0" width="150" height="50" rx="14" fill="#d6d6d6"/>
+  <rect x="330.0" y="45.0" width="150" height="50" rx="14" fill="#fff" stroke="#222" stroke-width="1.3"/>
+  <text x="405" y="75" font-size="14" text-anchor="middle" font-weight="bold" font-style="normal" fill="#222">Green</text>
+  <rect x="553.0" y="48.0" width="150" height="50" rx="14" fill="#d6d6d6"/>
+  <rect x="550.0" y="45.0" width="150" height="50" rx="14" fill="#fff" stroke="#222" stroke-width="1.3"/>
+  <text x="625" y="75" font-size="14" text-anchor="middle" font-weight="bold" font-style="normal" fill="#222">Amber</text>
+  <circle cx="40" cy="70" r="8" fill="#222"/>
+  <polyline points="48,70 110,70" fill="none" stroke="#222" stroke-width="1.3"/>
+  <polyline points="100.87,65.92 110,70 100.87,74.08" fill="none" stroke="#222" stroke-width="1.3"/>
+  <text x="79" y="62" font-size="11" text-anchor="middle" font-weight="normal" font-style="italic" fill="#555">new</text>
+  <polyline points="260,70 330,70" fill="none" stroke="#222" stroke-width="1.3"/>
+  <polyline points="320.87,65.92 330,70 320.87,74.08" fill="none" stroke="#222" stroke-width="1.3"/>
+  <text x="295" y="62" font-size="12" text-anchor="middle" font-weight="normal" font-style="normal" fill="#222">goGreen()</text>
+  <polyline points="480,70 550,70" fill="none" stroke="#222" stroke-width="1.3"/>
+  <polyline points="540.87,65.92 550,70 540.87,74.08" fill="none" stroke="#222" stroke-width="1.3"/>
+  <text x="515" y="62" font-size="12" text-anchor="middle" font-weight="normal" font-style="normal" fill="#222">goAmber()</text>
+  <polyline points="625,95 625,150 185,150 185,95" fill="none" stroke="#222" stroke-width="1.3"/>
+  <polyline points="180.92,104.13 185,95 189.08,104.13" fill="none" stroke="#222" stroke-width="1.3"/>
+  <text x="405" y="168" font-size="12" text-anchor="middle" font-weight="normal" font-style="normal" fill="#222">goRed()</text>
+</svg>

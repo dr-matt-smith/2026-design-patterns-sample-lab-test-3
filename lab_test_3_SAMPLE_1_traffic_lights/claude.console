@@ -1,5 +1,0 @@
-[session]
-type = "python"
-
-[session.python]
-script = "agent.claude()"
